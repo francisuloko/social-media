@@ -1,5 +1,7 @@
-import { CardGiftcard } from '@mui/icons-material';
 import React from 'react';
+import { CardGiftcard } from '@mui/icons-material';
+import { Users } from '../../DummyData';
+import Online from '../online/Online';
 import './rightbar.css';
 
 export default function Rightbar() {
@@ -15,27 +17,9 @@ export default function Rightbar() {
         <img className="rightbarAd" src="assets/persons/person-1.jpg" alt="" />
         <h4 className="rightbarTitle">Friends Online</h4>
         <ul className="rightbarFriendsList">
-          <li className="rightbarFriend flex-center">
-            <div className="rightbarProfileImageContainer flex-center">
-              <img className="rightbarProfileImage" src="assets/persons/person-1.jpg" alt="" />
-              <span className="rightbarOnline" />
-            </div>
-            <span className="rightbarUsername">John Doe</span>
-          </li>
-          <li className="rightbarFriend flex-center">
-            <div className="rightbarProfileImageContainer flex-center">
-              <img className="rightbarProfileImage" src="assets/persons/person-1.jpg" alt="" />
-              <span className="rightbarOnline" />
-            </div>
-            <span className="rightbarUsername">John Doe</span>
-          </li>
-          <li className="rightbarFriend flex-center">
-            <div className="rightbarProfileImageContainer flex-center">
-              <img className="rightbarProfileImage" src="assets/persons/person-1.jpg" alt="" />
-              <span className="rightbarOnline" />
-            </div>
-            <span className="rightbarUsername">John Doe</span>
-          </li>
+          { Users.map((user) => (
+            <Online key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>
