@@ -44,5 +44,4 @@ export const Posts = [
     likes: 12,
     comment: 10,
   },
-
 ]
