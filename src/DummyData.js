@@ -20,7 +20,7 @@ export const Posts = [
   {
     id: 1,
     desc: 'Post 1',
-    photo: 'assets/person/profile1.jpg',
+    photo: 'assets/persons/profile1.jpg',
     date: '1 minute ago',
     userId: 1,
     likes: 2,
@@ -28,7 +28,7 @@ export const Posts = [
   },
   {
     id: 2,
-    photo: 'assets/person/person-1.jpg',
+    photo: 'assets/persons/person-1.jpg',
     date: '10 minute ago',
     userId: 2,
     likes: 22,
@@ -37,7 +37,7 @@ export const Posts = [
   {
     id: 3,
     desc: 'Post 2',
-    photo: 'assets/posts/2.jpg',
+    photo: 'assets/persons/profile1.jpg',
     date: '10 minute ago',
     userId: 3,
     likes: 12,
