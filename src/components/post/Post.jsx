@@ -13,7 +13,7 @@ export default function Post({ post }) {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src="/assets/persons/person-1.jpg"
+              src={user[0].profilePicture}
               alt=""
               className="postProfileImage"
             />
