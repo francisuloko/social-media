@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Favorite, MoreVert, ThumbUp } from '@mui/icons-material';
 import { Users } from '../../DummyData';
@@ -6,6 +6,13 @@ import './post.css';
 
 export default function Post({ post }) {
   const user = Users.filter((user) => user.id === post.userId);
+  const [like, setLike] = useState(post.likes);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleLike = () => {
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsLiked(!isLiked);
+  };
 
   return (
     <div className="post">
@@ -36,10 +43,10 @@ export default function Post({ post }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <ThumbUp className="likeIcon" htmlColor="blue" />
-            <Favorite className="likeIcon" htmlColor="red" />
+            <ThumbUp onClick={handleLike} className="likeIcon" htmlColor="blue" />
+            <Favorite onClick={handleLike} className="likeIcon" htmlColor="red" />
             <span className="postLikeCounter">
-              { post.likes }
+              { like }
             </span>
           </div>
           <div className="postBottomRight">
