@@ -9,9 +9,9 @@ export default function Feed() {
     <div className="feed">
       <div className="feedWrapper">
         <Share />
-        <Post />
-        <Post />
-        <Post />
+        { Posts.map((post) => (
+          <Post key={post.id} post={post} />
+        ))}
       </div>
     </div>
   );
