@@ -10,6 +10,8 @@ import {
   Event,
   QuestionMarkOutlined,
 } from '@mui/icons-material';
+import { Users } from '../../DummyData';
+import Friends from '../friends/Friends';
 
 export default function Sidebar() {
   return (
@@ -52,30 +54,9 @@ export default function Sidebar() {
         <button type="button" className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendsList">
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
+          { Users.map((user) => (
+            <Friends key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>
