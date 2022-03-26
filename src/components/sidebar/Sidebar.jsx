@@ -52,30 +52,7 @@ export default function Sidebar() {
         <button type="button" className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendsList">
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/persons/person-1.jpg"
-              alt=""
-              className="sidebarFriendImage"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
+          
         </ul>
       </div>
     </div>
