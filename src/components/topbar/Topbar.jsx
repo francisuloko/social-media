@@ -1,17 +1,22 @@
 import React from 'react';
-import "./topbar.css";
-import { Search, Person, Chat, Notifications } from '@mui/icons-material';
+import './topbar.css';
+import {
+  Search,
+  Person,
+  Chat,
+  Notifications,
+} from '@mui/icons-material';
 
 export default function Topbar() {
   return (
-    <div className='topbarContainer'>
+    <div className="topbarContainer">
       <div className="topbarLeft">
         <span className="logo">Social Media</span>
       </div>
       <div className="topbarCenter">
         <div className="searchBar">
-          <Search className='searchIcon' />
-          <input type="text" className="searchInput" placeholder='Search for friends, posts or videos'/>
+          <Search className="searchIcon" />
+          <input type="text" className="searchInput" placeholder="Search for friends, posts or videos" />
         </div>
       </div>
       <div className="topbarRight">
@@ -36,5 +41,5 @@ export default function Topbar() {
         <img src="/assets/persons/profile1.jpg" alt="profile" className="topbarImage" />
       </div>
     </div>
-  )
+  );
 }
