@@ -1,24 +1,23 @@
-import React from 'react';
 import './register.css';
 
 export default function Register() {
   return (
     <div>
-      <div className="login flex-center">
-        <div className="loginWrapper">
-          <div className="loginLeft flex-center">
-            <h3 className="loginLogo">Logo</h3>
-            <span className="loginDescription">
+      <div className="register flex-center">
+        <div className="registerWrapper">
+          <div className="registerLeft flex-center">
+            <h3 className="registerLogo">Logo</h3>
+            <span className="registerDescription">
               Connect with friends on Soso!
             </span>
           </div>
-          <div className="loginRight">
-            <div className="loginBox">
-              <input type="email" placeholder="Email" className="loginInput" />
-              <input type="password" placeholder="Password" className="loginInput" />
-              <button type="button" className="loginButton">Log In</button>
-              <span className="loginForget">Forgot Password?</span>
-              <button type="button" className="loginRegister">Create a new account.</button>
+          <div className="registerRight">
+            <div className="registerBox">
+              <input type="email" placeholder="Email" className="registerInput" />
+              <input type="password" placeholder="Password" className="registerInput" />
+              <button type="button" className="registerButton">Log In</button>
+              <span className="registerForget">Forgot Password?</span>
+              <button type="button" className="registerRegister">Create a new account.</button>
             </div>
           </div>
         </div>
