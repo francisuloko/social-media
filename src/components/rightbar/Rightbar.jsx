@@ -65,7 +65,7 @@ export default function Rightbar({ profile }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {!profile ? <HomeRightBar /> : <ProfileRightbar /> }
+        {profile ? <ProfileRightbar /> : <HomeRightBar /> }
       </div>
     </div>
   );
