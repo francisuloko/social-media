@@ -12,7 +12,7 @@ export default function Login() {
               Connect with friends on soso!
             </span>
           </div>
-          <div className="loginRight flex-center">
+          <div className="loginRight">
             <div className="loginBox">
               <input type="email" placeholder="Email" className="loginInput" />
               <input type="password" placeholder="Password" className="loginInput" />
