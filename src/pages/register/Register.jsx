@@ -13,11 +13,12 @@ export default function Register() {
           </div>
           <div className="registerRight">
             <div className="registerBox">
+              <input type="text" placeholder="Username" className="registerInput" />
               <input type="email" placeholder="Email" className="registerInput" />
-              <input type="password" placeholder="Password" className="registerInput" />
-              <button type="button" className="registerButton">Log In</button>
-              <span className="registerForget">Forgot Password?</span>
-              <button type="button" className="registerRegister">Create a new account.</button>
+              <input type="password" placeholder="Passowrd" className="registerInput" />
+              <input type="password" placeholder="Confirm Password" className="registerInput" />
+              <button type="button" className="registerButton">Sign Up</button>
+              <button type="button" className="registerRegister">Log In</button>
             </div>
           </div>
         </div>
