@@ -12,7 +12,16 @@ export default function Home() {
       <div className="profile">
         <Sidebar />
         <div className="profileRight">
-          <div className="profileRightTop"></div>
+          <div className="profileRightTop">
+            <div className="profileCover">
+              <img className="profileCoverImage" src="assets/persons/profile1.jpg" alt="" />
+              <img className="profileUserImage" src="assets/persons/profile1.jpg" alt="" />
+            </div>
+            <div className="profileInfo">
+              <h4 className="profileInfoName">User 1</h4>
+              <span className="profileInfoDesc">About</span>
+            </div>
+          </div>
           <div className="profileRightBottom">
             <Feed />
             <Rightbar />
