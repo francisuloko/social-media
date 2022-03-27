@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { CardGiftcard } from '@mui/icons-material';
 import { Users } from '../../DummyData';
