@@ -4,3 +4,14 @@
   background-color: #f8f2f5;
   display: flex;
 }
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft, .loginRight {
+  flex: 1;
+  flex-direction: column;
+}
