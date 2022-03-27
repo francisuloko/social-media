@@ -63,3 +63,8 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.loginForgot {
+  text-align: center;
+  color: #1775ee;
+}
