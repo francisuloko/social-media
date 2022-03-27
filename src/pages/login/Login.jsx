@@ -9,7 +9,7 @@ export default function Login() {
           <div className="loginLeft flex-center">
             <h3 className="loginLogo">Logo</h3>
             <span className="loginDescription">
-              Connect with friends on soso!
+              Connect with friends on Soso!
             </span>
           </div>
           <div className="loginRight">

@@ -68,3 +68,16 @@
   text-align: center;
   color: #1775ee;
 }
+
+.loginRegister {
+  width: 60%;
+  align-self: center;
+  height: 50px;
+  border-radius: 18px;
+  border: none;
+  background-color: #42b72a;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
