@@ -51,8 +51,7 @@ export default function Post({ post }) {
           </div>
           <div className="postBottomRight">
             <span className="postCommentCounter">
-              { post.comment }
-              comments
+              { `${post.comment} comments` }
             </span>
           </div>
         </div>
