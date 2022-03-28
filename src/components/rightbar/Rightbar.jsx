@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { CardGiftcard } from '@mui/icons-material';
 import { Users } from '../../DummyData';
@@ -66,7 +65,7 @@ export default function Rightbar({ profile }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {!profile ? <HomeRightBar /> : <ProfileRightbar /> }
+        {profile ? <ProfileRightbar /> : <HomeRightBar /> }
       </div>
     </div>
   );
